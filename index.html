@@ -3,16 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nadia Coiffure - Parrucchiera a domicilio nel Luganese. Servizi di taglio, piega, tinta, colpi di sole e trattamenti direttamente a casa tua.">
-  <meta name="keywords" content="parrucchiera, domicilio, Lugano, Ticino, taglio, piega, tinta, capelli, acconciature">
-  <title>Nadia Coiffure - Parrucchiera a domicilio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Nadia Coiffure - Parrucchiera a domicilio nel Luganese. Taglio, piega, colore e trattamenti professionali direttamente a casa tua.">
+  <title>Nadia Coiffure - Parrucchiera a domicilio nel Luganese</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Language Switcher -->
   <div class="lang-switcher">
     <label for="lang-select">Lingua:</label>
     <select id="lang-select" onchange="window.location.href=this.value">
@@ -24,13 +20,10 @@
     </select>
   </div>
 
-  <!-- Header -->
   <header class="header">
     <div class="container">
       <nav class="nav">
-        <div class="logo">
-          <img src="images/logo.png" alt="Nadia Coiffure Logo" class="logo-img">
-        </div>
+        <div class="logo"><img src="images/logo.png" alt="Nadia Coiffure Logo" class="logo-img"></div>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="contatti.html">Contatti</a></li>
@@ -41,103 +34,139 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
         <img src="images/logo.png" alt="Nadia Coiffure" class="hero-logo">
         <h1>Nadia Coiffure</h1>
-        <p class="hero-subtitle">Parrucchiera a domicilio</p>
-        <p class="hero-tagline">Professionalità e cura direttamente a casa tua</p>
-        <a href="contatti.html" class="btn btn-primary">Contattami</a>
+        <p class="hero-subtitle">Parrucchiera a domicilio nel Luganese</p>
+        <p class="hero-tagline">Taglio, piega, colore e trattamenti professionali direttamente a casa tua</p>
+        <a href="contatti.html" class="btn btn-primary">Prenota il tuo appuntamento</a>
+        <p class="hero-proof"><span>Oltre 30 anni di esperienza</span> · <span>Servizio su appuntamento</span> · <span>Lugano e dintorni</span></p>
       </div>
     </div>
   </section>
 
-  <!-- Chi Sono Section -->
   <section class="about" id="chi-sono">
     <div class="container">
-      <h2>Chi Sono</h2>
+      <h2>Chi sono</h2>
       <div class="about-content">
         <div class="about-image">
           <img src="images/placeholder-nadia.jpg" alt="Nadia - Parrucchiera professionista" class="profile-img">
         </div>
         <div class="about-text">
-          <p>Ciao! Sono Nadia, parrucchiera professionista dal 1994. Ho dedicato la mia vita all'arte dell'acconciatura, con una passione particolare per la cura dei capelli e il benessere delle mie clienti.</p>
-          <p>Dopo anni di esperienza nei saloni, ho scelto di offrire i miei servizi direttamente a casa tua, portando professionalità, prodotti di qualità e un trattamento personalizzato nel comfort della tua casa.</p>
-          <p><strong>Specializzata in servizi per:</strong></p>
+          <p>Ciao! Sono Nadia, parrucchiera professionista dal 1994. Mi occupo con passione della cura dei capelli e del benessere delle mie clienti.</p>
+          <p>Dopo anni di esperienza nei saloni, ho scelto di offrire i miei servizi direttamente a casa tua: professionalità, prodotti di qualità e un trattamento personalizzato nella comodità del tuo domicilio.</p>
+          <p><strong>Mi rivolgo soprattutto a:</strong></p>
           <ul>
-            <li>Persone anziane</li>
-            <li>Persone con mobilità ridotta</li>
-            <li>Residenti in case di cura e ospizi</li>
-            <li>Chi preferisce la comodità del domicilio</li>
+            <li>persone anziane</li>
+            <li>persone con mobilità ridotta</li>
+            <li>residenti in case di cura e ospedali</li>
+            <li>chi preferisce la comodità di casa propria</li>
           </ul>
+          <div class="about-quickfacts">
+            <span class="quickfact">Dal 1994</span>
+            <span class="quickfact">Servizio a domicilio</span>
+            <span class="quickfact">Luganese e dintorni</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Servizi Section -->
   <section class="services" id="servizi">
     <div class="container">
-      <h2>I Miei Servizi</h2>
+      <h2>I miei servizi</h2>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">💇</div>
-          <h3>Taglio e Piega</h3>
-          <p>Tagli personalizzati e pieghe eleganti per ogni occasione</p>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 3v18M6 3c0 0 2-1 6-1s6 1 6 1M6 3c0 0 2 1 6 1s6-1 6-1M6 21h12M9 8v10M15 8v10M3 12h3M18 12h3"/>
+            </svg>
+          </div>
+          <h3>Taglio e piega</h3>
+          <p>Tagli personalizzati e pieghe eleganti per valorizzare il tuo stile</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">🎨</div>
-          <h3>Tinta e Colpi di Sole</h3>
-          <p>Colorazioni professionali con prodotti di qualità</p>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3>Colore e mèches</h3>
+          <p>Colorazione professionale con prodotti di qualità</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">✨</div>
-          <h3>Trattamenti e Cheratina</h3>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3l1.5 4.5h4.5l-3.5 3 1.5 4.5-4-3-4 3 1.5-4.5-3.5-3h4.5z"/>
+              <path d="M5 21h14"/>
+            </svg>
+          </div>
+          <h3>Trattamenti e cheratina</h3>
           <p>Trattamenti rigeneranti per capelli sani e luminosi</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">💅</div>
-          <h3>Ricostruzione Unghie</h3>
-          <p>Nail Artist diplomata per mani curate e perfette</p>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2"/>
+              <path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6"/>
+              <path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/>
+              <path d="M18 11a2 2 0 1 1 0 4h-4a2 2 0 1 0 0 4h1"/>
+            </svg>
+          </div>
+          <h3>Manicure e unghie</h3>
+          <p>Nail Artist diplomata per mani curate ed eleganti</p>
         </div>
       </div>
       <div class="services-note">
-        <p><strong>Servizio dedicato a domicilio</strong> — Vengo da te con tutta l'attrezzatura necessaria. Ideale per chi non può spostarsi o preferisce la comodità di casa.</p>
+        <p><strong>Servizio a domicilio</strong> — Vengo direttamente a casa tua con tutta l'attrezzatura necessaria. Ideale per chi non può spostarsi o preferisce la comodità del proprio domicilio.</p>
       </div>
     </div>
   </section>
 
-  <!-- Perché Scegliermi Section -->
   <section class="why-me" id="perche-scegliermi">
     <div class="container">
-      <h2>Perché Scegliermi</h2>
+      <h2>Perché scegliermi</h2>
       <div class="benefits-grid">
         <div class="benefit">
-          <div class="benefit-icon">✅</div>
-          <h3>Servizio Personalizzato</h3>
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="8" r="5"/>
+              <path d="M20 21a8 8 0 0 0-16 0"/>
+            </svg>
+          </div>
+          <h3>Servizio personalizzato</h3>
           <p>Consulenza e trattamenti su misura per le tue esigenze</p>
         </div>
         <div class="benefit">
-          <div class="benefit-icon">✅</div>
-          <h3>30+ Anni di Esperienza</h3>
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 8v8M8 12h8"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </div>
+          <h3>Oltre 30 anni di esperienza</h3>
           <p>Professionalità e competenza dal 1994</p>
         </div>
         <div class="benefit">
-          <div class="benefit-icon">✅</div>
-          <h3>Prodotti di Qualità</h3>
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3>Prodotti di qualità</h3>
           <p>Utilizzo solo prodotti professionali per risultati eccellenti</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Zona Operativa Section -->
   <section class="zone" id="zona">
     <div class="container">
-      <h2>Zona Operativa</h2>
-      <p class="zone-intro">Opero in tutto il Luganese e zone limitrofe:</p>
+      <h2>Zona operativa</h2>
+      <p class="zone-intro">Opero in tutta la regione di Lugano e dintorni:</p>
       <div class="zone-list">
         <div class="zone-item">Torricella</div>
         <div class="zone-item">Lugano</div>
@@ -152,19 +181,21 @@
     </div>
   </section>
 
-  <!-- Call to Action Section -->
   <section class="cta">
     <div class="container">
-      <h2>Prenota il Tuo Appuntamento</h2>
-      <p>Contattami per un preventivo gratuito o per fissare un appuntamento</p>
+      <h2>Prenota il tuo appuntamento a domicilio</h2>
+      <p>Contattami per una consulenza gratuita o per fissare un appuntamento</p>
       <div class="cta-buttons">
-        <a href="tel:+41796147121" class="btn btn-primary">📞 +41 79 614 71 21</a>
+        <a href="tel:+41796147121" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +41 79 614 71 21
+        </a>
         <a href="contatti.html" class="btn btn-secondary">Scrivimi</a>
       </div>
+      <p class="cta-note">Rispondo personalmente a ogni richiesta</p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -174,16 +205,17 @@
         </div>
         <div class="footer-contact">
           <p><strong>Contatti</strong></p>
-          <p>📞 +41 79 614 71 21</p>
-          <p>✉️ nadia.coiffure.ti@gmail.com</p>
-          <p>📍 Torricella, Ticino, Svizzera</p>
+          <p>+41 79 614 71 21</p>
+          <p>nadia.coiffure.ti@gmail.com</p>
+          <p>Torricella, Ticino, Svizzera</p>
         </div>
         <div class="footer-links">
-          <p><strong>Link Utili</strong></p>
+          <p><strong>Link utili</strong></p>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="contatti.html">Contatti</a></li>
             <li><a href="certificazioni.html">Certificazioni</a></li>
+            <li><a href="galleria.html">Galleria</a></li>
           </ul>
         </div>
       </div>
