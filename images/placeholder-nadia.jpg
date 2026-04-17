@@ -1,0 +1,6 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#E6D7FF"/>
+  <circle cx="200" cy="150" r="80" fill="#C8A2C8"/>
+  <ellipse cx="200" cy="300" rx="100" ry="80" fill="#C8A2C8"/>
+  <text x="200" y="370" text-anchor="middle" fill="#7A5A9A" font-family="Georgia, serif" font-size="18">Foto di Nadia</text>
+</svg>
