@@ -135,21 +135,23 @@ ul {
 
 .lang-switcher a,
 .lang-switcher span {
-  margin: 0 15px;
-  font-size: 16px;
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   color: var(--gray-dark);
+  padding: 5px 12px;
+  border-radius: 4px;
 }
 
 .lang-switcher a:hover {
+  background: var(--lilla-light);
   color: var(--lilla-darker);
 }
 
 .lang-switcher .lang-active {
-  font-weight: 600;
-  color: var(--lilla-darker);
-  border-bottom: 2px solid var(--lilla-primary);
-  padding-bottom: 2px;
+  background: var(--lilla-primary);
+  color: var(--white);
 }
 
 /* Header */
