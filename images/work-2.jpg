@@ -1,0 +1,6 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#E6D7FF"/>
+  <rect x="50" y="80" width="300" height="140" rx="10" fill="#C8A2C8"/>
+  <circle cx="200" cy="150" r="40" fill="#9B7BB9"/>
+  <text x="200" y="250" text-anchor="middle" fill="#7A5A9A" font-family="Georgia, serif" font-size="16">Foto Lavoro $i</text>
+</svg>
