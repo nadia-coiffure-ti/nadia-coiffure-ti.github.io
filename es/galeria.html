@@ -2,8 +2,16 @@
 <html lang="es">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Galería - Nadia Coiffure</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles.css"></head>
 <body>
-<div class="lang-switcher"><a href="../galleria.html">IT</a><a href="../de/galerie.html">DE</a><a href="../fr/galerie.html">FR</a><a href="../en/gallery.html">EN</a><span class="lang-active">ES</span></div>
-<header class="header"><div class="container"><nav class="nav"><div class="logo"><img src="../images/logo.png" alt="Nadia Coiffure Logo" class="logo-img"></div><ul class="nav-links"><li><a href="index.html">Inicio</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="certificaciones.html">Certificaciones</a></li><li><a href="galeria.html" class="active">Galería</a></li></ul></nav></div></header>
+  <div class="lang-switcher">
+    <label for="lang-select">Idioma:</label>
+    <select id="lang-select" onchange="window.location.href=this.value">
+      <option value="../galleria.html">Italiano</option>
+      <option value="../de/galerie.html">Deutsch</option>
+      <option value="../fr/galerie.html">Français</option>
+      <option value="../en/gallery.html">English</option>
+      <option value="../es/galeria.html" selected>Español</option>
+    </select>
+  </div>
 <section class="page-header"><div class="container"><h1>Mis Trabajos</h1><p>Una selección de peinados, cortes y tratamientos realizados con pasión</p></div></section>
 <section class="gallery-intro"><div class="container"><p class="intro-text">Cada clienta es única y merece un peinado que realce su personalidad. Aquí hay algunos ejemplos de mis trabajos.</p></div></section>
 <section class="gallery-section"><div class="container"><div class="gallery-grid"><div class="gallery-item"><div class="gallery-image"><img src="../images/work-1.jpg" alt="Corte y peinado" class="work-img"></div><div class="gallery-caption"><h3>Corte y Peinado</h3><p>Corte medio con peinado suave y natural.</p></div></div><div class="gallery-item"><div class="gallery-image"><img src="../images/work-2.jpg" alt="Mechas rubias" class="work-img"></div><div class="gallery-caption"><h3>Mechas Rubias</h3><p>Mechas rubias que iluminan el rostro naturalmente.</p></div></div><div class="gallery-item"><div class="gallery-image"><img src="../images/work-3.jpg" alt="Coloración cobertura" class="work-img"></div><div class="gallery-caption"><h3>Coloración Cobertura</h3><p>Color uniforme para cubrir canas.</p></div></div><div class="gallery-item"><div class="gallery-image"><img src="../images/work-4.jpg" alt="Corte corto moderno" class="work-img"></div><div class="gallery-caption"><h3>Corte Corto Moderno</h3><p>Corte corto con textura para un look joven.</p></div></div><div class="gallery-item"><div class="gallery-image"><img src="../images/work-5.jpg" alt="Tratamiento queratina" class="work-img"></div><div class="gallery-caption"><h3>Tratamiento Queratina</h3><p>Tratamiento regenerador para cabello seco y dañado.</p></div></div><div class="gallery-item"><div class="gallery-image"><img src="../images/work-6.jpg" alt="Peinado evento" class="work-img"></div><div class="gallery-caption"><h3>Peinado para Evento</h3><p>Peinado elegante para ocasiones especiales.</p></div></div><div class="gallery-item"><div class="gallery-image"><img src="../images/work-7.jpg" alt="Modelado uñas" class="work-img"></div><div class="gallery-caption"><h3>Modelado de Uñas</h3><p>Manicura perfecta con modelado profesional.</p></div></div></div></div></section>

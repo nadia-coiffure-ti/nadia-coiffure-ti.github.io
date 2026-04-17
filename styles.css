@@ -125,7 +125,7 @@ ul {
   color: var(--lilla-darker);
 }
 
-/* Language Switcher */
+/* Language Switcher - Dropdown */
 .lang-switcher {
   background: var(--lilla-lighter);
   padding: 10px 0;
@@ -133,25 +133,38 @@ ul {
   border-bottom: 1px solid var(--lilla-light);
 }
 
-.lang-switcher a,
-.lang-switcher span {
-  margin: 0 10px;
+.lang-switcher label {
   font-size: 14px;
   font-weight: 500;
-  text-decoration: none;
   color: var(--gray-dark);
-  padding: 5px 12px;
-  border-radius: 4px;
+  margin-right: 10px;
 }
 
-.lang-switcher a:hover {
-  background: var(--lilla-light);
+.lang-switcher select {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+ border: 1px solid var(--lilla-primary);
+  border-radius: 6px;
+ background: var(--white);
   color: var(--lilla-darker);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%237A5A9A' d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
 }
 
-.lang-switcher .lang-active {
-  background: var(--lilla-primary);
-  color: var(--white);
+.lang-switcher select:hover {
+  border-color: var(--lilla-dark);
+}
+
+.lang-switcher select:focus {
+  outline: none;
+  border-color: var(--lilla-darker);
+  box-shadow: 0 0 0 2px rgba(200, 162, 200, 0.2);
 }
 
 /* Header */

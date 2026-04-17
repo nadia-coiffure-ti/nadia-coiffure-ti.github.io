@@ -10,11 +10,14 @@
 </head>
 <body>
   <div class="lang-switcher">
-    <a href="../certificazioni.html">IT</a>
-    <a href="../de/zertifikate.html">DE</a>
-    <span class="lang-active">FR</span>
-    <a href="../en/certifications.html">EN</a>
-    <a href="../es/certificaciones.html">ES</a>
+    <label for="lang-select">Langue:</label>
+    <select id="lang-select" onchange="window.location.href=this.value">
+      <option value="../certificazioni.html">Italiano</option>
+      <option value="../de/zertifikate.html">Deutsch</option>
+      <option value="../fr/certifications.html" selected>Français</option>
+      <option value="../en/certifications.html">English</option>
+      <option value="../es/certificaciones.html">Español</option>
+    </select>
   </div>
 
   <header class="header">

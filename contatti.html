@@ -13,11 +13,14 @@
 <body>
   <!-- Language Switcher -->
   <div class="lang-switcher">
-    <span class="lang-active">IT</span>
-    <a href="de/contatti.html">DE</a>
-    <a href="fr/contact.html">FR</a>
-    <a href="en/contact.html">EN</a>
-    <a href="es/contacto.html">ES</a>
+    <label for="lang-select">Lingua:</label>
+    <select id="lang-select" onchange="window.location.href=this.value">
+      <option value="contatti.html" selected>Italiano</option>
+      <option value="de/contatti.html">Deutsch</option>
+      <option value="fr/contact.html">Français</option>
+      <option value="en/contact.html">English</option>
+      <option value="es/contacto.html">Español</option>
+    </select>
   </div>
 
   <!-- Header -->
