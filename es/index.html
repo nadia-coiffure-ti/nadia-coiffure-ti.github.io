@@ -5,44 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nadia Coiffure - Peluquera a domicilio en la región de Lugano. Cortes, peinados, coloración y tratamientos profesionales directamente en su casa.">
   <title>Nadia Coiffure - Peluquera a domicilio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <div class="lang-switcher">
-    <label for="lang-select">Idioma:</label>
-    <select id="lang-select" onchange="window.location.href=this.value">
-      <option value="../index.html">Italiano</option>
-      <option value="../de/index.html">Deutsch</option>
-      <option value="../fr/index.html">Français</option>
-      <option value="../en/index.html">English</option>
-      <option value="../es/index.html" selected>Español</option>
-    </select>
-  </div>
-
   <header class="header">
     <div class="container">
       <nav class="nav">
-        <div class="logo"><img src="../images/logo.png" alt="Nadia Coiffure Logo" class="logo-img"></div>
+        <div class="logo"><img src="../images/logo.png" alt="Nadia Coiffure" class="logo-img"></div>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Inicio</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="certificaciones.html">Certificaciones</a></li>
-          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="galeria.html">Trabajos</a></li>
         </ul>
+        <div class="nav-lang">
+          <a href="../index.html" title="Italiano">IT</a>
+          <a href="../de/index.html" title="Deutsch">DE</a>
+          <a href="../fr/index.html" title="Français">FR</a>
+          <a href="../en/index.html" title="English">EN</a>
+          <a href="../es/index.html" class="active" title="Español">ES</a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero hero-no-image">
     <div class="container">
       <div class="hero-content">
-        <img src="../images/logo.png" alt="Nadia Coiffure" class="hero-logo">
-        <h1>Nadia Coiffure</h1>
-        <p class="hero-subtitle">Peluquera a domicilio</p>
-        <p class="hero-tagline">Profesionalidad y atención personalizada en la comodidad de su hogar</p>
+        <h1>La peluquería va a tu casa.</h1>
+        <p class="hero-subtitle">Nadia Coiffure</p>
+        <p class="hero-tagline">Corte, coloración y tratamientos profesionales a domicilio — más de 30 años de experiencia en la región de Lugano.</p>
         <a href="contacto.html" class="btn btn-primary">Reserve su cita</a>
-        <p class="hero-proof"><span>Más de 30 años de experiencia</span> · <span>Con cita previa</span> · <span>Región de Lugano</span></p>
       </div>
     </div>
   </section>
@@ -55,8 +49,8 @@
           <img src="../images/placeholder-nadia.jpg" alt="Nadia - Peluquera profesional" class="profile-img">
         </div>
         <div class="about-text">
-          <p>¡Hola! Soy Nadia, peluquera profesional desde 1994. He dedicado mi vida a la peluquería, con una especial pasión por el cuidado del cabello y el bienestar de mis clientas.</p>
-          <p>Después de muchos años de experiencia en salones, decidí ofrecer mis servicios a domicilio para brindar atención profesional, productos de calidad y un trato personalizado en la comodidad de su hogar.</p>
+          <p>En treinta años he aprendido que el cabello bien cuidado no es un lujo — es bienestar.</p>
+          <p>Soy Nadia, peluquera profesional desde 1994. Me especializo en servicios para personas mayores, personas con movilidad reducida, residentes en centros para mayores y quienes prefieren la comodidad del hogar.</p>
           <p><strong>Me especializo en servicios para:</strong></p>
           <ul>
             <li>personas mayores</li>
@@ -65,9 +59,18 @@
             <li>quienes prefieren la comodidad del hogar</li>
           </ul>
           <div class="about-quickfacts">
-            <span class="quickfact">Desde 1994</span>
-            <span class="quickfact">A domicilio</span>
-            <span class="quickfact">Región Lugano</span>
+            <div class="quickfact">
+              <span class="quickfact-number">1994</span>
+              <span class="quickfact-label">Desde</span>
+            </div>
+            <div class="quickfact">
+              <span class="quickfact-number">Domicilio</span>
+              <span class="quickfact-label">Servicio a</span>
+            </div>
+            <div class="quickfact">
+              <span class="quickfact-number">Lugano</span>
+              <span class="quickfact-label">Región</span>
+            </div>
           </div>
         </div>
       </div>
@@ -82,26 +85,28 @@
           <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 3v18M6 3c0 0 2-1 6-1s6 1 6 1M6 3c0 0 2 1 6 1s6-1 6-1M6 21h12M9 8v10M15 8v10M3 12h3M18 12h3"/></svg></div>
           <h3>Corte y peinado</h3>
           <p>Cortes personalizados y peinados elegantes para cualquier ocasión</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Presupuesto gratuito a solicitud</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M12 6v6l4 2"/></svg></div>
           <h3>Color y mechas</h3>
           <p>Coloración profesional con productos de calidad</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Presupuesto gratuito a solicitud</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l1.5 4.5h4.5l-3.5 3 1.5 4.5-4-3-4 3 1.5-4.5-3.5-3h4.5z"/><path d="M5 21h14"/></svg></div>
           <h3>Tratamientos de cuidado y keratina</h3>
           <p>Tratamientos regeneradores para un cabello sano y brillante</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Presupuesto gratuito a solicitud</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6"/><path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/><path d="M18 11a2 2 0 1 1 0 4h-4a2 2 0 1 0 0 4h1"/></svg></div>
           <h3>Manicura y diseño de uñas</h3>
           <p>Especialista certificada en uñas para unas manos cuidadas y elegantes</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Presupuesto gratuito a solicitud</p>
         </div>
       </div>
-      <div class="services-note">
-        <p><strong>Servicio a domicilio</strong> — Me desplazo a su casa con todo lo necesario. Ideal para quienes no pueden desplazarse o prefieren la comodidad del hogar.</p>
-      </div>
+      <p class="service-note"><strong>Servicio a domicilio</strong> — Me desplazo a su casa con todo lo necesario. Ideal para quienes no pueden desplazarse o prefieren la comodidad del hogar.</p>
     </div>
   </section>
 
@@ -132,6 +137,9 @@
     <div class="container">
       <h2>Zona de servicio</h2>
       <p class="zone-intro">Ofrezco servicio en Lugano y alrededores:</p>
+      <div class="zone-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44367.89070777557!2d8.93!3d46.00!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47841e34e8e6f29d%3A0x9c7e3c8e8e8e8e8e!2sLugano!5e0!3m2s1ses!2sch!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <div class="zone-list">
         <div class="zone-item">Torricella</div>
         <div class="zone-item">Lugano</div>
@@ -142,19 +150,25 @@
         <div class="zone-item">Caprino</div>
         <div class="zone-item">Melide</div>
       </div>
-      <p class="zone-note">Si su zona no aparece en la lista, contácteme para consultar la disponibilidad.</p>
+      <p class="zone-note">¿No está segura de estar en mi zona? Lláme — probablemente voy a su casa.</p>
     </div>
   </section>
 
   <section class="cta">
     <div class="container">
-      <h2>Reserve su cita a domicilio</h2>
+      <h2>Reserve su cita</h2>
       <p>Contácteme para una consulta gratuita o para concertar una cita</p>
+      <a href="tel:+41796147121" class="cta-phone">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +41 79 614 71 21
+      </a>
+      <p class="cta-hours">Disponible de lunes a viernes, 9:00–16:00</p>
       <div class="cta-buttons">
-        <a href="tel:+41796147121" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +41 79 614 71 21</a>
         <a href="contacto.html" class="btn btn-secondary">Escríbame</a>
       </div>
-      <p class="cta-note">Respondo personalmente a cada solicitud</p>
+      <p class="cta-note">Respondo personalmente, sin contestador automático.</p>
     </div>
   </section>
 
@@ -163,7 +177,11 @@
       <div class="footer-content">
         <div class="footer-brand">
           <img src="../images/logo.png" alt="Nadia Coiffure" class="footer-logo">
-          <p>Nadia Coiffure — Peluquera a domicilio</p>
+          <p>Peluquera a domicilio</p>
+          <div class="footer-hours">
+            <p><strong>Horarios:</strong> Lun–Vie 9:00–16:00</p>
+            <p>Sábado y domingo cerrado</p>
+          </div>
         </div>
         <div class="footer-contact">
           <p><strong>Contacto</strong></p>
@@ -177,7 +195,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="certificaciones.html">Certificaciones</a></li>
-            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="galeria.html">Trabajos</a></li>
           </ul>
         </div>
       </div>
