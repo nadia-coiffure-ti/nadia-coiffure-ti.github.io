@@ -3,46 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nadia Coiffure - Parrucchiera a domicilio nel Luganese. Taglio, piega, colore e trattamenti professionali direttamente a casa tua.">
+  <meta name="description" content="Nadia Coiffure - Parrucchiera a domicilio nel Luganese. Taglio, piega, colore e trattamenti professionali direttamente a casa tua. Oltre 30 anni di esperienza.">
   <title>Nadia Coiffure - Parrucchiera a domicilio nel Luganese</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="lang-switcher">
-    <label for="lang-select">Lingua:</label>
-    <select id="lang-select" onchange="window.location.href=this.value">
-      <option value="index.html" selected>Italiano</option>
-      <option value="de/index.html">Deutsch</option>
-      <option value="fr/index.html">Français</option>
-      <option value="en/index.html">English</option>
-      <option value="es/index.html">Español</option>
-    </select>
-  </div>
-
   <header class="header">
     <div class="container">
       <nav class="nav">
-        <div class="logo"><img src="images/logo.png" alt="Nadia Coiffure Logo" class="logo-img"></div>
+        <div class="logo"><img src="images/logo.png" alt="Nadia Coiffure" class="logo-img"></div>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="contatti.html">Contatti</a></li>
           <li><a href="certificazioni.html">Certificazioni</a></li>
-          <li><a href="galleria.html">Galleria</a></li>
+          <li><a href="galleria.html">Lavori</a></li>
         </ul>
+        <div class="nav-lang">
+          <a href="index.html" class="active" title="Italiano">IT</a>
+          <a href="de/index.html" title="Deutsch">DE</a>
+          <a href="fr/index.html" title="Français">FR</a>
+          <a href="en/index.html" title="English">EN</a>
+          <a href="es/index.html" title="Español">ES</a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero hero-no-image">
     <div class="container">
       <div class="hero-content">
-        <img src="images/logo.png" alt="Nadia Coiffure" class="hero-logo">
-        <h1>Nadia Coiffure</h1>
-        <p class="hero-subtitle">Parrucchiera a domicilio nel Luganese</p>
-        <p class="hero-tagline">Taglio, piega, colore e trattamenti professionali direttamente a casa tua</p>
-        <a href="contatti.html" class="btn btn-primary">Prenota il tuo appuntamento</a>
-        <p class="hero-proof"><span>Oltre 30 anni di esperienza</span> · <span>Servizio su appuntamento</span> · <span>Lugano e dintorni</span></p>
+        <h1>Il salone viene da te.</h1>
+        <p class="hero-subtitle">Nadia Coiffure</p>
+        <p class="hero-tagline">Taglio, colore e trattamenti professionali a domicilio — oltre 30 anni di esperienza nel Luganese.</p>
+        <a href="contatti.html" class="btn btn-primary">Prenota un appuntamento</a>
       </div>
     </div>
   </section>
@@ -55,8 +49,8 @@
           <img src="images/placeholder-nadia.jpg" alt="Nadia - Parrucchiera professionista" class="profile-img">
         </div>
         <div class="about-text">
-          <p>Ciao! Sono Nadia, parrucchiera professionista dal 1994. Mi occupo con passione della cura dei capelli e del benessere delle mie clienti.</p>
-          <p>Dopo anni di esperienza nei saloni, ho scelto di offrire i miei servizi direttamente a casa tua: professionalità, prodotti di qualità e un trattamento personalizzato nella comodità del tuo domicilio.</p>
+          <p>In trent'anni ho imparato che i capelli curati non sono un lusso — sono benessere.</p>
+          <p>Sono Nadia, parrucchiera professionista dal 1994. Mi occupo con passione della cura dei capelli e del benessere delle mie clienti. Dopo anni di esperienza nei saloni, ho scelto di offrire i miei servizi direttamente a casa tua: professionalità, prodotti di qualità e un trattamento personalizzato nella comodità del tuo domicilio.</p>
           <p><strong>Mi rivolgo soprattutto a:</strong></p>
           <ul>
             <li>persone anziane</li>
@@ -65,9 +59,18 @@
             <li>chi preferisce la comodità di casa propria</li>
           </ul>
           <div class="about-quickfacts">
-            <span class="quickfact">Dal 1994</span>
-            <span class="quickfact">Servizio a domicilio</span>
-            <span class="quickfact">Luganese e dintorni</span>
+            <div class="quickfact">
+              <span class="quickfact-number">1994</span>
+              <span class="quickfact-label">Dal</span>
+            </div>
+            <div class="quickfact">
+              <span class="quickfact-number">Domicilio</span>
+              <span class="quickfact-label">Servizio a</span>
+            </div>
+            <div class="quickfact">
+              <span class="quickfact-number">Lugano</span>
+              <span class="quickfact-label">Zona</span>
+            </div>
           </div>
         </div>
       </div>
@@ -86,6 +89,7 @@
           </div>
           <h3>Taglio e piega</h3>
           <p>Tagli personalizzati e pieghe eleganti per valorizzare il tuo stile</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Preventivo gratuito su richiesta</p>
         </div>
         <div class="service-card">
           <div class="service-icon">
@@ -96,6 +100,7 @@
           </div>
           <h3>Colore e mèches</h3>
           <p>Colorazione professionale con prodotti di qualità</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Preventivo gratuito su richiesta</p>
         </div>
         <div class="service-card">
           <div class="service-icon">
@@ -106,6 +111,7 @@
           </div>
           <h3>Trattamenti e cheratina</h3>
           <p>Trattamenti rigeneranti per capelli sani e luminosi</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Preventivo gratuito su richiesta</p>
         </div>
         <div class="service-card">
           <div class="service-icon">
@@ -118,11 +124,10 @@
           </div>
           <h3>Manicure e unghie</h3>
           <p>Nail Artist diplomata per mani curate ed eleganti</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Preventivo gratuito su richiesta</p>
         </div>
       </div>
-      <div class="services-note">
-        <p><strong>Servizio a domicilio</strong> — Vengo direttamente a casa tua con tutta l'attrezzatura necessaria. Ideale per chi non può spostarsi o preferisce la comodità del proprio domicilio.</p>
-      </div>
+      <p class="service-note"><strong>Servizio a domicilio</strong> — Vengo direttamente a casa tua con tutta l'attrezzatura necessaria. Ideale per chi non può spostarsi o preferisce la comodità del proprio domicilio.</p>
     </div>
   </section>
 
@@ -167,6 +172,9 @@
     <div class="container">
       <h2>Zona operativa</h2>
       <p class="zone-intro">Opero in tutta la regione di Lugano e dintorni:</p>
+      <div class="zone-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44367.89070777557!2d8.93!3d46.00!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47841e34e8e6f29d%3A0x9c7e3c8e8e8e8e8e!2sLugano!5e0!3m2s1sit!2sch!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <div class="zone-list">
         <div class="zone-item">Torricella</div>
         <div class="zone-item">Lugano</div>
@@ -177,22 +185,25 @@
         <div class="zone-item">Caprino</div>
         <div class="zone-item">Melide</div>
       </div>
-      <p class="zone-note">Per zone non elencate, contattami per verificare la disponibilità.</p>
+      <p class="zone-note">Non sei sicura di rientrare nella zona? Chiamami — probabilmente vengo da te.</p>
     </div>
   </section>
 
   <section class="cta">
     <div class="container">
-      <h2>Prenota il tuo appuntamento a domicilio</h2>
+      <h2>Prenota il tuo appuntamento</h2>
       <p>Contattami per una consulenza gratuita o per fissare un appuntamento</p>
+      <a href="tel:+41796147121" class="cta-phone">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +41 79 614 71 21
+      </a>
+      <p class="cta-hours">Raggiungibile dal lunedì al venerdì, 9:00–16:00</p>
       <div class="cta-buttons">
-        <a href="tel:+41796147121" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          +41 79 614 71 21
-        </a>
         <a href="contatti.html" class="btn btn-secondary">Scrivimi</a>
       </div>
-      <p class="cta-note">Rispondo personalmente a ogni richiesta</p>
+      <p class="cta-note">Rispondo personalmente, senza segreterie automatiche.</p>
     </div>
   </section>
 
@@ -201,7 +212,11 @@
       <div class="footer-content">
         <div class="footer-brand">
           <img src="images/logo.png" alt="Nadia Coiffure" class="footer-logo">
-          <p>Nadia Coiffure — Parrucchiera a domicilio</p>
+          <p>Parrucchiera a domicilio nel Luganese</p>
+          <div class="footer-hours">
+            <p><strong>Orari:</strong> Lun–Ven 9:00–16:00</p>
+            <p>Sabato e domenica chiuso</p>
+          </div>
         </div>
         <div class="footer-contact">
           <p><strong>Contatti</strong></p>
@@ -215,7 +230,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="contatti.html">Contatti</a></li>
             <li><a href="certificazioni.html">Certificazioni</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
+            <li><a href="galleria.html">Lavori</a></li>
           </ul>
         </div>
       </div>
