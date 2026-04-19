@@ -3,46 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nadia Coiffure - Friseurin bei Ihnen zu Hause in der Region Lugano. Professionelle Haarpflege und persönliche Betreuung direkt bei Ihnen zu Hause.">
+  <meta name="description" content="Nadia Coiffure - Friseurin bei Ihnen zu Hause in der Region Lugano. Professionelle Haarpflege direkt bei Ihnen zu Hause.">
   <title>Nadia Coiffure - Friseurin bei Ihnen zu Hause</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <div class="lang-switcher">
-    <label for="lang-select">Sprache:</label>
-    <select id="lang-select" onchange="window.location.href=this.value">
-      <option value="../index.html">Italiano</option>
-      <option value="../de/index.html" selected>Deutsch</option>
-      <option value="../fr/index.html">Français</option>
-      <option value="../en/index.html">English</option>
-      <option value="../es/index.html">Español</option>
-    </select>
-  </div>
-
   <header class="header">
     <div class="container">
       <nav class="nav">
-        <div class="logo"><img src="../images/logo.png" alt="Nadia Coiffure Logo" class="logo-img"></div>
+        <div class="logo"><img src="../images/logo.png" alt="Nadia Coiffure" class="logo-img"></div>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Startseite</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
           <li><a href="zertifikate.html">Zertifikate</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="galerie.html">Arbeiten</a></li>
         </ul>
+        <div class="nav-lang">
+          <a href="../index.html" title="Italiano">IT</a>
+          <a href="../de/index.html" class="active" title="Deutsch">DE</a>
+          <a href="../fr/index.html" title="Français">FR</a>
+          <a href="../en/index.html" title="English">EN</a>
+          <a href="../es/index.html" title="Español">ES</a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero hero-no-image">
     <div class="container">
       <div class="hero-content">
-        <img src="../images/logo.png" alt="Nadia Coiffure" class="hero-logo">
-        <h1>Nadia Coiffure</h1>
-        <p class="hero-subtitle">Friseurin bei Ihnen zu Hause</p>
-        <p class="hero-tagline">Professionelle Haarpflege und persönliche Betreuung direkt bei Ihnen zu Hause</p>
+        <h1>Der Salon kommt zu Ihnen.</h1>
+        <p class="hero-subtitle">Nadia Coiffure</p>
+        <p class="hero-tagline">Professionelle Haarpflege direkt bei Ihnen zu Hause — über 30 Jahre Erfahrung in der Region Lugano.</p>
         <a href="kontakt.html" class="btn btn-primary">Termin vereinbaren</a>
-        <p class="hero-proof"><span>Über 30 Jahre Erfahrung</span> · <span>Nach Vereinbarung</span> · <span>Raum Lugano</span></p>
       </div>
     </div>
   </section>
@@ -55,8 +49,8 @@
           <img src="../images/placeholder-nadia.jpg" alt="Nadia - Professionelle Friseurin" class="profile-img">
         </div>
         <div class="about-text">
-          <p>Hallo, ich bin Nadia und seit 1994 als professionelle Friseurin tätig. Seit vielen Jahren widme ich mich mit Leidenschaft der Haarpflege und dem Wohlbefinden meiner Kundinnen.</p>
-          <p>Nach meiner langjährigen Erfahrung in Salons habe ich mich entschieden, meine Dienstleistungen direkt zu Ihnen nach Hause zu bringen – mit Fachkompetenz, hochwertigen Produkten und persönlicher Betreuung in Ihrer gewohnten Umgebung.</p>
+          <p>In dreissig Jahren habe ich gelernt, dass gepflegtes Haar kein Luxus ist — es ist Wohlbefinden.</p>
+          <p>Ich bin Nadia, professionelle Friseurin seit 1994. Meine Dienstleistungen richten sich an Seniorinnen und Senioren, Menschen mit eingeschränkter Mobilität, Bewohner von Pflegeeinrichtungen und alle, die den Komfort eines Hausbesuchs schätzen.</p>
           <p><strong>Besonders geeignet für:</strong></p>
           <ul>
             <li>Seniorinnen und Senioren</li>
@@ -65,9 +59,18 @@
             <li>alle, die den Komfort eines Hausbesuchs schätzen</li>
           </ul>
           <div class="about-quickfacts">
-            <span class="quickfact">Seit 1994</span>
-            <span class="quickfact">Hausbesuche</span>
-            <span class="quickfact">Raum Lugano</span>
+            <div class="quickfact">
+              <span class="quickfact-number">1994</span>
+              <span class="quickfact-label">Seit</span>
+            </div>
+            <div class="quickfact">
+              <span class="quickfact-number">Hausbesuch</span>
+              <span class="quickfact-label">Service</span>
+            </div>
+            <div class="quickfact">
+              <span class="quickfact-number">Lugano</span>
+              <span class="quickfact-label">Region</span>
+            </div>
           </div>
         </div>
       </div>
@@ -82,26 +85,28 @@
           <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 3v18M6 3c0 0 2-1 6-1s6 1 6 1M6 3c0 0 2 1 6 1s6-1 6-1M6 21h12M9 8v10M15 8v10M3 12h3M18 12h3"/></svg></div>
           <h3>Schnitt und Föhn</h3>
           <p>Individuelle Schnitte und gepflegte Föhnfrisuren für jeden Anlass</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Kostenloses Angebot auf Anfrage</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M12 6v6l4 2"/></svg></div>
           <h3>Coloration und Strähnen</h3>
           <p>Professionelle Colorationen mit hochwertigen Produkten</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Kostenloses Angebot auf Anfrage</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l1.5 4.5h4.5l-3.5 3 1.5 4.5-4-3-4 3 1.5-4.5-3.5-3h4.5z"/><path d="M5 21h14"/></svg></div>
           <h3>Pflegebehandlungen und Keratin</h3>
           <p>Pflegende Behandlungen für gesundes, kräftiges und glänzendes Haar</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Kostenloses Angebot auf Anfrage</p>
         </div>
         <div class="service-card">
           <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6"/><path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/><path d="M18 11a2 2 0 1 1 0 4h-4a2 2 0 1 0 0 4h1"/></svg></div>
           <h3>Nageldesign</h3>
           <p>Diplomierte Nail-Artistin für gepflegte und schöne Hände</p>
+          <p style="font-size:13px; color: var(--text-light); margin-top: 8px;">Kostenloses Angebot auf Anfrage</p>
         </div>
       </div>
-      <div class="services-note">
-        <p><strong>Hausbesuchsservice</strong> – ich komme mit der gesamten notwendigen Ausrüstung direkt zu Ihnen. Ideal für Menschen mit eingeschränkter Mobilität oder für alle, die den Komfort eines Termins zu Hause schätzen.</p>
-      </div>
+      <p class="service-note"><strong>Hausbesuchsservice</strong> — ich komme mit der gesamten notwendigen Ausrüstung direkt zu Ihnen. Ideal für Menschen mit eingeschränkter Mobilität oder für alle, die den Komfort eines Termins zu Hause schätzen.</p>
     </div>
   </section>
 
@@ -122,7 +127,7 @@
         <div class="benefit">
           <div class="benefit-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
           <h3>Hochwertige Produkte</h3>
-          <p>Ich arbeite ausschliesslich mit professionellen Produkten für ein gepflegtes Ergebnis</p>
+          <p>Ich arbeite ausschliesslich mit professionellen Produkten</p>
         </div>
       </div>
     </div>
@@ -132,6 +137,9 @@
     <div class="container">
       <h2>Einsatzgebiet</h2>
       <p class="zone-intro">Ich bin in Lugano und in der Umgebung für Sie unterwegs:</p>
+      <div class="zone-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44367.89070777557!2d8.93!3d46.00!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47841e34e8e6f29d%3A0x9c7e3c8e8e8e8e8e!2sLugano!5e0!3m2s1sde!2sch!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <div class="zone-list">
         <div class="zone-item">Torricella</div>
         <div class="zone-item">Lugano</div>
@@ -142,7 +150,7 @@
         <div class="zone-item">Caprino</div>
         <div class="zone-item">Melide</div>
       </div>
-      <p class="zone-note">Wenn Ihr Ort hier nicht aufgeführt ist, kontaktieren Sie mich einfach – ich prüfe gerne die Verfügbarkeit.</p>
+      <p class="zone-note">Sie sind nicht sicher, ob Sie in meinem Gebiet wohnen? Rufen Sie mich an — ich komme wahrscheinlich zu Ihnen.</p>
     </div>
   </section>
 
@@ -150,11 +158,17 @@
     <div class="container">
       <h2>Termin vereinbaren</h2>
       <p>Für eine kostenlose Beratung oder zur Terminvereinbarung dürfen Sie mich gerne kontaktieren</p>
+      <a href="tel:+41796147121" class="cta-phone">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +41 79 614 71 21
+      </a>
+      <p class="cta-hours">Erreichbar Montag bis Freitag, 9:00–16:00</p>
       <div class="cta-buttons">
-        <a href="tel:+41796147121" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +41 79 614 71 21</a>
         <a href="kontakt.html" class="btn btn-secondary">Schreiben Sie mir</a>
       </div>
-      <p class="cta-note">Ich antworte persönlich auf jede Anfrage</p>
+      <p class="cta-note">Ich antworte persönlich, ohne automatische Systeme.</p>
     </div>
   </section>
 
@@ -163,7 +177,11 @@
       <div class="footer-content">
         <div class="footer-brand">
           <img src="../images/logo.png" alt="Nadia Coiffure" class="footer-logo">
-          <p>Nadia Coiffure — Friseurin bei Ihnen zu Hause</p>
+          <p>Friseurin bei Ihnen zu Hause</p>
+          <div class="footer-hours">
+            <p><strong>Öffnungszeiten:</strong> Mo–Fr 9:00–16:00</p>
+            <p>Samstag und Sonntag geschlossen</p>
+          </div>
         </div>
         <div class="footer-contact">
           <p><strong>Kontakt</strong></p>
@@ -177,7 +195,7 @@
             <li><a href="index.html">Startseite</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
             <li><a href="zertifikate.html">Zertifikate</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="galerie.html">Arbeiten</a></li>
           </ul>
         </div>
       </div>

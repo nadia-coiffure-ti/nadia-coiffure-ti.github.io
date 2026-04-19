@@ -3,177 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Galleria dei lavori di Nadia Coiffure - Esempi di acconciature, tagli, tinte e trattamenti. Parrucchiera a domicilio nel Luganese.">
-  <title>Galleria Lavori - Nadia Coiffure</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Galleria lavori di Nadia Coiffure. Tagli, colorazioni, trattamenti professionali.">
+  <title>Lavori - Nadia Coiffure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Language Switcher -->
-  <div class="lang-switcher">
-    <label for="lang-select">Lingua:</label>
-    <select id="lang-select" onchange="window.location.href=this.value">
-      <option value="galleria.html" selected>Italiano</option>
-      <option value="de/galerie.html">Deutsch</option>
-      <option value="fr/galerie.html">Français</option>
-      <option value="en/gallery.html">English</option>
-      <option value="es/galeria.html">Español</option>
-    </select>
-  </div>
-
-  <!-- Header -->
   <header class="header">
     <div class="container">
       <nav class="nav">
-        <div class="logo">
-          <img src="images/logo.png" alt="Nadia Coiffure Logo" class="logo-img">
-        </div>
+        <div class="logo"><img src="images/logo.png" alt="Nadia Coiffure" class="logo-img"></div>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="contatti.html">Contatti</a></li>
           <li><a href="certificazioni.html">Certificazioni</a></li>
-          <li><a href="galleria.html" class="active">Galleria</a></li>
+          <li><a href="galleria.html" class="active">Lavori</a></li>
         </ul>
+        <div class="nav-lang">
+          <a href="galleria.html" class="active" title="Italiano">IT</a>
+          <a href="de/galerie.html" title="Deutsch">DE</a>
+          <a href="fr/galerie.html" title="Français">FR</a>
+          <a href="en/gallery.html" title="English">EN</a>
+          <a href="es/galeria.html" title="Español">ES</a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <!-- Page Header -->
   <section class="page-header">
     <div class="container">
-      <h1>I Miei Lavori</h1>
+      <h1>I miei lavori</h1>
       <p>Una selezione di acconciature, tagli e trattamenti realizzati con passione</p>
     </div>
   </section>
 
-  <!-- Gallery Introduction -->
   <section class="gallery-intro">
     <div class="container">
-      <p class="intro-text">Ogni cliente è unica e merita un'acconciatura che valorizzi la sua personalità. Ecco alcuni esempi dei miei lavori — tagli, tinte, colpi di sole e trattamenti personalizzati.</p>
+      <p class="intro-text">Ogni cliente è unica e merita un'acconciatura che valorizzi la sua personalità. Ecco alcuni esempi dei miei lavori.</p>
     </div>
   </section>
 
-  <!-- Gallery Grid -->
   <section class="gallery-section">
     <div class="container">
       <div class="gallery-grid">
-        
-        <!-- Work 1 -->
         <div class="gallery-item">
           <div class="gallery-image">
-            <img src="images/work-1.jpg" alt="Taglio e piega elegante" class="work-img">
+            <img src="images/work-1.jpg" alt="Taglio e piega" class="work-img">
           </div>
           <div class="gallery-caption">
-            <h3>Taglio e Piega Elegante</h3>
-            <p>Taglio medio con piega morbida e naturale, perfetto per ogni occasione.</p>
+            <h3>Taglio e piega</h3>
+            <p>Taglio medio con piega morbida e naturale.</p>
           </div>
         </div>
-
-        <!-- Work 2 -->
         <div class="gallery-item">
           <div class="gallery-image">
-            <img src="images/work-2.jpg" alt="Colpi di sole biondi" class="work-img">
+            <img src="images/work-2.jpg" alt="Meches bionde" class="work-img">
           </div>
           <div class="gallery-caption">
-            <h3>Colpi di Sole Biondi</h3>
-            <p>Meches bionde che illuminano il viso con un effetto naturale e radioso.</p>
+            <h3>Colore e mèches</h3>
+            <p>Mèches che illuminano il viso in modo naturale.</p>
           </div>
         </div>
-
-        <!-- Work 3 -->
         <div class="gallery-item">
           <div class="gallery-image">
-            <img src="images/work-3.jpg" alt="Tinta copertura" class="work-img">
+            <img src="images/work-3.jpg" alt="Tinta uniforme" class="work-img">
           </div>
           <div class="gallery-caption">
-            <h3>Tinta Copertura</h3>
-            <p>Colorazione uniforme per coprire i capelli bianchi con un risultato naturale.</p>
+            <h3>Tinta coprente</h3>
+            <p>Colorazione professionale per coprire i capelli bianchi naturalmente.</p>
           </div>
         </div>
-
-        <!-- Work 4 -->
         <div class="gallery-item">
           <div class="gallery-image">
             <img src="images/work-4.jpg" alt="Taglio corto moderno" class="work-img">
           </div>
           <div class="gallery-caption">
-            <h3>Taglio Corto Moderno</h3>
-            <p>Taglio corto con sfumature e texture per un look giovane e dinamico.</p>
+            <h3>Taglio corto moderno</h3>
+            <p>Taglio corto con texture per un look giovane e dinamico.</p>
           </div>
         </div>
-
-        <!-- Work 5 -->
         <div class="gallery-item">
           <div class="gallery-image">
             <img src="images/work-5.jpg" alt="Trattamento cheratina" class="work-img">
           </div>
           <div class="gallery-caption">
-            <h3>Trattamento Cheratina</h3>
-            <p>Trattamento rigenerante per capelli secchi e danneggiati, risultato liscio e brillante.</p>
+            <h3>Trattamento cheratina</h3>
+            <p>Trattamento rigenerante per capelli secchi e danneggiati.</p>
           </div>
         </div>
-
-        <!-- Work 6 -->
         <div class="gallery-item">
           <div class="gallery-image">
-            <img src="images/work-6.jpg" alt="Acconciatura per evento" class="work-img">
+            <img src="images/work-6.jpg" alt="Piega evento" class="work-img">
           </div>
           <div class="gallery-caption">
-            <h3>Acconciatura per Evento</h3>
-            <p>Piega elegante per occasioni speciali: matrimoni, cerimonie, feste.</p>
+            <h3>Piega per eventi</h3>
+            <p>Acconciature eleganti per matrimoni e occasioni speciali.</p>
           </div>
         </div>
-
-        <!-- Work 7 -->
         <div class="gallery-item">
           <div class="gallery-image">
-            <img src="images/work-7.jpg" alt="Ricostruzione unghie" class="work-img">
+            <img src="images/work-7.jpg" alt="Manicure" class="work-img">
           </div>
           <div class="gallery-caption">
-            <h3>Ricostruzione Unghie</h3>
-            <p>Manicure perfetta con ricostruzione professionale e decorazioni personalizzate.</p>
+            <h3>Manicure e unghie</h3>
+            <p>Nail Artist diplomata per mani curate ed eleganti.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
   <section class="cta">
     <div class="container">
-      <h2>Vuoi un Look Personalizzato?</h2>
-      <p>Contattami per un appuntamento e insieme troveremo lo stile più adatto a te</p>
-      <div class="cta-buttons">
-        <a href="tel:+41796147121" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +41 79 614 71 21</a>
-        <a href="contatti.html" class="btn btn-secondary">Scrivimi</a>
-      </div>
+      <h2>Vuoi un look personalizzato?</h2>
+      <p>Contattami per un appuntamento e troviamo insieme lo stile che ti valorizza</p>
+      <a href="tel:+41796147121" class="cta-phone">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        +41 79 614 71 21
+      </a>
+      <p class="cta-hours">Raggiungibile dal lunedì al venerdì, 9:00–16:00</p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
           <img src="images/logo.png" alt="Nadia Coiffure" class="footer-logo">
-          <p>Nadia Coiffure — Parrucchiera a domicilio</p>
+          <p>Parrucchiera a domicilio nel Luganese</p>
+          <div class="footer-hours">
+            <p><strong>Orari:</strong> Lun–Ven 9:00–16:00</p>
+            <p>Sabato e domenica chiuso</p>
+          </div>
         </div>
         <div class="footer-contact">
           <p><strong>Contatti</strong></p>
-          <p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.86.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +41 79 614 71 21</p>
-          <p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg> nadia.coiffure.ti@gmail.com</p>
-          <p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Torricella, Ticino, Svizzera</p>
+          <p>+41 79 614 71 21</p>
+          <p>nadia.coiffure.ti@gmail.com</p>
+          <p>Torricella, Ticino, Svizzera</p>
         </div>
         <div class="footer-links">
-          <p><strong>Link Utili</strong></p>
+          <p><strong>Link utili</strong></p>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="contatti.html">Contatti</a></li>
             <li><a href="certificazioni.html">Certificazioni</a></li>
-            <li><a href="galleria.html">Galleria</a></li>
+            <li><a href="galleria.html">Lavori</a></li>
           </ul>
         </div>
       </div>
