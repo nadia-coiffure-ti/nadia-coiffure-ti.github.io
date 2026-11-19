@@ -19,4 +19,9 @@ Le venti pagine attive condividono styles.css. La cartella v1 resta archivio.
 Logo precedente conservato in images/logo.png.
 Contrasti verificati: prugna/superficie 9,72:1, hover/superficie 7,52:1,
 testo secondario/rosa 5,77:1, pulsante WhatsApp 6,56:1.
-Verifica visiva browser/mobile e pubblicazione ancora da completare.
+Versione web: images/logo-ns-web.webp (830 px, circa 27 KB). Originale conservato.
+Favicon NS: images/favicon.png.
+Revisione 19 novembre sera: area solo Ticino, nessun riferimento a Torricella,
+orari 09–17, diploma riconosciuto (conferma Marco), FAQ in cinque lingue.
+Verifica Chromium a 375 e 1440 px: nessun overflow; immagini mancanti sostituite
+con segnaposto testuali. Foto autentiche restano sospese.
