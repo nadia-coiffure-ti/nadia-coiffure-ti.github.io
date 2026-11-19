@@ -1,34 +1,38 @@
 /* =============================================
    NADIA COIFFURE - STYLES
-   Palette: Lilla elegante con gerarchia chiara
+   Palette: viola-prugna e rosa cipria dal biglietto da visita
    Font: Playfair Display (titoli) + Lato (corpo)
    Design: Premium, femminile, accessibile
 ============================================= */
 
-/* CSS Variables - Nuova palette */
+/* CSS Variables - palette derivata dal biglietto da visita */
 :root {
-  /* Palette principale */
-  --lilla-bg: #F5F0FA;
-  --lilla-primary: #9B7EC8;
-  --lilla-dark: #6A4C93;
+  /* Logo: prugna profondo, viola orchidea, rosa cipria */
+  --lilla-bg: #F8E7F6;
+  --lilla-primary: #9856A3;
+  --lilla-dark: #652771;
+  --primary-dark: #652771;
+  --brand-hover: #793687;
+  --brand-mauve: #96839E;
+  --cream: #FDF3FC;
   
   /* Neutri */
-  --white-warm: #FAF8F5;
+  --white-warm: #FFF9FE;
   --white: #FFFFFF;
-  --text-main: #3A3A3A;
-  --text-light: #5A5A5A;
+  --text-main: #392A3B;
+  --text-light: #675568;
   
   /* Footer */
-  --footer-bg: #6A4C93;
+  --footer-bg: #56205F;
   
   /* Font */
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
   
   /* Shadows */
-  --shadow-soft: 0 2px 8px rgba(106, 76, 147, 0.08);
-  --shadow-medium: 0 4px 16px rgba(106, 76, 147, 0.12);
-  --shadow-card: 0 8px 24px rgba(106, 76, 147, 0.1);
+  --shadow-soft: 0 2px 8px rgba(86, 32, 95, 0.08);
+  --shadow-medium: 0 4px 16px rgba(86, 32, 95, 0.12);
+  --shadow-card: 0 8px 24px rgba(86, 32, 95, 0.10);
   
   /* Border radius */
   --radius: 12px;
@@ -122,7 +126,7 @@ ul {
 }
 
 .btn-primary:hover {
-  background: var(--lilla-primary);
+  background: var(--brand-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-card);
   color: var(--white-warm);
@@ -145,7 +149,7 @@ ul {
   background: var(--white);
   padding: 10px 0;
   text-align: center;
-  border-bottom: 1px solid rgba(155, 126, 200, 0.2);
+  border-bottom: 1px solid rgba(101, 39, 113, 0.2);
 }
 
 .lang-switcher label {
@@ -166,7 +170,7 @@ ul {
   color: var(--lilla-dark);
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236A4C93' d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23652771' d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
   padding-right: 30px;
@@ -187,7 +191,7 @@ ul {
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid rgba(155, 126, 200, 0.15);
+  border-bottom: 1px solid rgba(101, 39, 113, 0.15);
 }
 
 .nav {
@@ -198,8 +202,12 @@ ul {
 }
 
 .logo-img {
-  height: 50px;
-  width: auto;
+  display: block;
+  width: 154px;
+  height: auto;
+  aspect-ratio: 1659 / 948;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
 }
 
 .nav-links {
@@ -297,7 +305,7 @@ ul {
 
 .hero-tagline {
   font-size: 18px;
-  color: rgba(250, 248, 245, 0.9);
+  color: rgba(255, 249, 254, 0.9);
   margin-bottom: 32px;
   line-height: 1.6;
 }
@@ -323,7 +331,7 @@ ul {
   background: var(--white);
   padding: 50px 0;
   text-align: center;
-  border-bottom: 1px solid rgba(155, 126, 200, 0.15);
+  border-bottom: 1px solid rgba(101, 39, 113, 0.15);
 }
 
 .page-header h1 {
@@ -428,7 +436,7 @@ ul {
 }
 
 .service-card:hover {
-  background: #EDE7F6;
+  background: var(--cream);
   transform: translateY(-4px);
   box-shadow: var(--shadow-medium);
 }
@@ -576,7 +584,7 @@ ul {
 /* CTA Section */
 .cta {
   padding: 70px 0;
-  background: var(--lilla-primary);
+  background: var(--lilla-dark);
   text-align: center;
   color: var(--white-warm);
 }
@@ -666,7 +674,7 @@ ul {
   padding: 16px;
   background: var(--white);
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(155, 126, 200, 0.2);
+  border: 1px solid rgba(101, 39, 113, 0.2);
 }
 
 .contact-icon {
@@ -708,12 +716,12 @@ ul {
   background: var(--white);
   border-radius: var(--radius-sm);
   overflow: hidden;
-  border: 1px solid rgba(155, 126, 200, 0.2);
+  border: 1px solid rgba(101, 39, 113, 0.2);
 }
 
 .hours-table td {
   padding: 12px 16px;
-  border-bottom: 1px solid rgba(155, 126, 200, 0.1);
+  border-bottom: 1px solid rgba(101, 39, 113, 0.1);
   font-size: 15px;
 }
 
@@ -738,7 +746,7 @@ ul {
   padding: 32px;
   background: var(--white);
   border-radius: var(--radius);
-  border: 1px solid rgba(155, 126, 200, 0.2);
+  border: 1px solid rgba(101, 39, 113, 0.2);
 }
 
 .contact-message h2 {
@@ -775,7 +783,7 @@ ul {
   background: var(--white);
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid rgba(155, 126, 200, 0.15);
+  border: 1px solid rgba(101, 39, 113, 0.15);
 }
 
 .certification-card img {
@@ -824,7 +832,7 @@ ul {
   background: var(--white);
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid rgba(155, 126, 200, 0.15);
+  border: 1px solid rgba(101, 39, 113, 0.15);
   transition: var(--transition);
 }
 
@@ -881,20 +889,23 @@ ul {
 }
 
 .footer-logo {
-  height: 45px;
-  width: auto;
+  width: 210px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1659 / 948;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
   margin-bottom: 12px;
-  filter: brightness(0) invert(1);
 }
 
 .footer-brand p {
-  color: rgba(250, 248, 245, 0.8);
+  color: rgba(255, 249, 254, 0.8);
   font-size: 15px;
 }
 
 .footer-contact p {
   margin-bottom: 8px;
-  color: rgba(250, 248, 245, 0.85);
+  color: rgba(255, 249, 254, 0.85);
   font-size: 15px;
 }
 
@@ -905,9 +916,9 @@ ul {
 .footer-hours {
   margin-top: 16px;
   padding-top: 16px;
-  border-top: 1px solid rgba(250, 248, 245, 0.15);
+  border-top: 1px solid rgba(255, 249, 254, 0.15);
   font-size: 14px;
-  color: rgba(250, 248, 245, 0.75);
+  color: rgba(255, 249, 254, 0.75);
 }
 
 .footer-links ul {
@@ -919,7 +930,7 @@ ul {
 }
 
 .footer-links a {
-  color: rgba(250, 248, 245, 0.8);
+  color: rgba(255, 249, 254, 0.8);
   font-size: 15px;
 }
 
@@ -930,8 +941,8 @@ ul {
 .footer-bottom {
   text-align: center;
   padding-top: 24px;
-  border-top: 1px solid rgba(250, 248, 245, 0.1);
-  color: rgba(250, 248, 245, 0.6);
+  border-top: 1px solid rgba(255, 249, 254, 0.1);
+  color: rgba(255, 249, 254, 0.6);
   font-size: 14px;
 }
 
@@ -967,6 +978,7 @@ ul {
   
   .nav-links {
     gap: 12px;
+    margin-left: 0;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -1014,7 +1026,7 @@ ul {
   min-height: 48px;
   padding: 0 18px;
   border-radius: 999px;
-  background: #25D366;
+  background: #176B3A;
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -1024,11 +1036,16 @@ ul {
 
 .whatsapp-float:hover,
 .whatsapp-float:focus-visible {
-  background: #1da851;
+  background: #11542C;
   color: #fff;
   outline: 3px solid #fff;
   outline-offset: 2px;
 }
+
+.faq { padding: 70px 0; background: var(--cream); }
+.faq details { max-width: 850px; margin: 10px auto; padding: 18px 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+.faq summary { cursor: pointer; font-weight: 700; color: var(--primary-dark); }
+.faq p { margin: 12px 0 0; }
 
 @media (max-width: 480px) {
   .whatsapp-float { right: 12px; bottom: 12px; padding: 0 15px; }
