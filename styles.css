@@ -96,6 +96,14 @@ p {
   margin-bottom: 14px;
 }
 
+.hero-tagline > span {
+  display: block;
+}
+
+.hero-experience {
+  margin-top: 0.35em;
+}
+
 a {
   color: var(--lilla-dark);
   text-decoration: none;
