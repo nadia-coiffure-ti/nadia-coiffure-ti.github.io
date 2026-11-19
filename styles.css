@@ -1002,3 +1002,34 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+/* Fixed booking shortcut */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: #25D366;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .22);
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus-visible {
+  background: #1da851;
+  color: #fff;
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float { right: 12px; bottom: 12px; padding: 0 15px; }
+}
